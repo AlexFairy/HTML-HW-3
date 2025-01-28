@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New HTML5</title>
+  </head>
+  <body>
+    <h1>Exploring New HTML5 Input Types</h1>
+    
+    <form action="/register" method="post">
+      
+      <fieldset>
+        <legend>Task 1:Implementing Email Input</legend>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div role="alert" aria-live="assertive">Please enter a valid email address.</div>
+        <button type="submit">Submit</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Task 2: Utilizing Number Input</legend>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="999" step="1" required>
+        <button type="submit">Submit Quantity</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Task 3: Employing Date Input</legend>
+
+        <label for="date-of-birth">Date of Birth:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth" required>
+        <button type="submit">Submit DOB Info</button>        
+      </fieldset>
+
+      <fieldset>
+        <legend>Task 4: Enhancing User Experience with Range Input</legend>
+
+        <label for="points">Rating or Quantity(0-16):</label>
+        <input type="range" id="points" name="points" min="0" max="16">
+        <button type="submit">Submit</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Task 5 (BONUS): Capturing Color with Color Input</legend>
+
+        <label for="favorite-color">Pick A Color:</label>
+        <input type="color" id="favorite-color" name="favorite-color" value="#ff0000">
+        <button type="submit">Submit</button>
+      </fieldset>
+
+    </form>
+  </body>
+</html>
