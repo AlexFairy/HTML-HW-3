@@ -4,7 +4,7 @@
     <title>New HTML5</title>
   </head>
   <body>
-    <h1>Exploring New HTML5 Input Types</h1>
+    <h1>1. Exploring New HTML5 Input Types</h1>
     
     <form action="/register" method="post">
       
@@ -47,6 +47,51 @@
         <label for="favorite-color">Pick A Color:</label>
         <input type="color" id="favorite-color" name="favorite-color" value="#ff0000">
         <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+
+    <h1>2. Building a Comprehensive Web Form</h1>
+    <form action="/register" method="post">
+
+      <fieldset>
+        <legend>Task 1: Creating a Selection Experience</legend>
+
+        <label for="favorite-program">Select your favorite programming language:</label>
+        <select id="favorite-program" name="favorite-program">
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="html-css">HTML/CSS</option>
+          <option value="c#">C#</option>
+          <option value="c++">C++</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Level of Expertise</legend>
+        
+        <input type="radio" id="beginner" name="level" value="beginner">
+        <label for="beginner">Beginner</label>
+        
+
+        <input type="radio" id="intermediate" name="level" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+
+        <input type="radio" id="advanced" name="level" value="advanced">
+        <label for="advanced">Advanced</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred Developement Platforms</legend>
+        
+        <input type="checkbox" id="web" name="preference" value="web">
+        <label for="web">Web</label>
+        
+
+        <input type="checkbox" id="mobile" name="preference" value="mobile">
+        <label for="mobile">Mobile</label>
+
+        <input type="checkbox" id="desktop" name="preference" value="desktop">
+        <label for="desktop">Desktop</label>
       </fieldset>
 
     </form>
